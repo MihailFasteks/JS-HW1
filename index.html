@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let num1, num2, res=0;
+        num1=input=parseInt(prompt("Введите число 1: "));
+        num2=input=parseInt(prompt("Введите число 2: "));
+       for(let i=num1; i<=num2; i++){
+        res+=i;
+        }
+        document.write(res);
+    </script> -->
+    <hr>
+    <!-- <script>
+       let num1, num2, num3=0;
+        num1=parseInt(prompt("Введите число 1: "));
+        num2=parseInt(prompt("Введите число 2: "));
+        let min, res;
+        if(num1<num2){
+            min=num1;
+        }
+        else if((num2<num1)||(num2==num1)){
+            min=num2;
+        }
+          while(num3<=min){
+            if((num1%num3==0)&&(num2%num3==0)){
+                res=num3;
+            }
+            num3++;
+          }
+          document.write(res);
+    </script> -->
+    <hr>
+    <!-- <script>
+        let usNum, res=1;
+        usNum=parseInt(prompt("Введите число: "));
+        while(res<=usNum){
+            if(usNum%res==0){
+                document.write(res+" ");
+            }
+            res++;
+        }
+    </script> -->
+    <hr>
+<!-- <script>
+        let number = parseInt(prompt("Введите число: "));
+        let count = 0;
+        while (number > 1) {
+            number = number / 10;
+            count++;
+            
+        }
+        document.write("  Кол-во: " + count);
+    </script> -->
+    <hr>
+    <!-- <script>
+        let plus=0, minus=0;
+        for (let i=0;i<10;i++){
+        let number = parseInt(prompt("Введите число: "));
+        if (number>0){
+            plus++;
+        }
+        else if(number<0){
+            minus++;
+        }
+        }
+        
+        document.write("  Кол-во отрицательных чисел: " + minus);
+        document.write("  Кол-во положительных чисел: " + plus);
+    </script> -->
+    <hr>
+    <!-- <script>
+        let num1, num2, sign, res;
+        while(confirm("Решить пример? ")){
+             num1= parseInt(prompt("Введите число 1: "));
+         num2= parseInt(prompt("Введите число 2: "));
+         sign=prompt("Введите знак: ");
+        if(sign==='+'){
+            res=num1+num2;
+            alert(res);
+        }
+        else if(sign==='-'){
+            res=num1-num2;
+            alert(res);
+        }
+        else if(sign==='/'){
+            res=num1/num2;
+           alert(res);
+        }
+        else if(sign==='*'){
+            res=num1*num2;
+            alert(res);
+        }
+        }
+    </script> -->
+    <hr>
+    <!-- <script>
+        var userNumber = parseInt(prompt("Введите число:"));
+        var shiftAmount = parseInt(prompt("Введите количество цифр для сдвига:"));
+        var numberStr = userNumber.toString();
+        var length = numberStr.length;
+        var shiftedNumberStr = '';
+        for (var i = 0; i < length; i++) {
+    var newIndex = (i + shiftAmount) % length;
+    shiftedNumberStr += numberStr[newIndex];
+}
+document.write("Исходное число: " + userNumber);
+document.write("Сдвиг на " + shiftAmount + " цифр(ы): " + shiftedNumberStr);
+
+    </script> -->
+    <!-- <script>
+    for (let i=0;i<7;i++){
+      if(i==0){
+        let isOk=confirm("Понедельник. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+      }
+      if(i==1){
+        let isOk=confirm("Вторник. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+      }
+      if(i==2){
+        let isOk=confirm("Среда. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+      }
+      if(i==3){
+        let isOk=confirm("Четверг. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+      }
+      if(i==4){
+        let isOk=confirm("Пятница. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+      }
+      if(i==5){
+        let isOk=confirm("Суббота. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+      }
+      if(i==6){
+        let isOk=confirm("Воскресенье. Продолжить?");
+        if(isOk==false){
+            break;
+        }
+        i=-1;
+      }
+        }
+
+    </script> -->
+    <!-- <script>
+       for (let i=2;i<10;i++){
+        for (let j=1;i<=10;j++){
+            let result=i*j;
+            document.write(result);
+            document.write();
+        }
+       }
+        </script> -->
+        <script>
+            document.write("Загадайте число от 0 до 100");
+            let nMin=0;
+            let nMax=100;
+            let usN=50;
+            let userChoice;
+            while(true){
+            userChoice=prompt(usN+"Ваше число >, < либо = данному числу?");
+            if (userChoice=="<"){
+                nMax=usN-1;
+                usN=usN-(usN/2);
+
+            }
+            else if(userChoice==">"){
+                usN=usN+(usN/2);
+                nMin=usN+1;
+            }
+            else if(userChoice=="="){
+                alert("Это ваше число!");
+                break;
+            }
+            };
+        </script>
+</body>
+</html>
